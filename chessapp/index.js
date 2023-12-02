@@ -1,3 +1,10 @@
+// Final Project 
+// Nick Fontana and Corey Schrauth
+
+// Use node index.js to start app
+
+
+
 const express = require('express')
 const app = express()
 const port = 3000
