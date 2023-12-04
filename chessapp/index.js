@@ -1,17 +1,15 @@
 // Final Project 
 // Nick Fontana and Corey Schrauth
 
-// Use nodemon .bin/www to start app
+import React, { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./styles.css";
 
-const express = require('express')
-const app = express()
-const port = 3000
+import App from "./App";
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
-
+const root = createRoot(document.getElementById("root"));
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
