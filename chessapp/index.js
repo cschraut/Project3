@@ -1,9 +1,7 @@
 // Final Project 
 // Nick Fontana and Corey Schrauth
 
-// Use node index.js to start app
-
-
+// Use nodemon .bin/www to start app
 
 const express = require('express')
 const app = express()
@@ -16,3 +14,4 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
