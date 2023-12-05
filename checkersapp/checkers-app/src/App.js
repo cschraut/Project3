@@ -10,7 +10,7 @@ export default function Board() {
 
   return (
     <div>
-      <div className = "status">r</div>
+      <div className = "status"></div>
       <div className="board-row">
         <Square value = {squares[0]} />
         <Square value = {squares[1]} />
@@ -90,8 +90,6 @@ export default function Board() {
         <Square value = {squares[61]} />
         <Square value = {squares[62]} />
         <Square value = {squares[63]} />
-      </div>
-      <div>
       </div>
     </div>
     );
