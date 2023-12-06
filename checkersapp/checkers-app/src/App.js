@@ -2,10 +2,12 @@
 
 import './App.css';
 
+
 import React from 'react';
-import {useState} from 'react';
+import {useState, Image} from 'react';
+import red from './red-check.png';
 export default function Board() {
-  const [squares, setSquares] = useState(Array(64).fill(null));
+  const [squares, setBoard] = useState(Array(64).fill(null));
 
   return (
     <div>
@@ -93,19 +95,12 @@ export default function Board() {
     </div>
     );
 }
-function Square({value}) {
-  return (
-  <button 
-    className="square">
-    {value}
-  </button>
-  );
-}
+
 function SquareBlack({value}) {
   return (
   <button 
     className="square1">
-    {value}
+      <img className="red-piece" src = {red}></img>
   </button>
   );
 }
