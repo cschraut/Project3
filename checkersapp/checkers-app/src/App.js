@@ -1,47 +1,45 @@
-
-
 import './App.css';
-
-
 import React from 'react';
-import {useState, Image} from 'react';
+import {useState} from 'react';
 import red from './red-check.png';
+import white from './white-check.png';
+
+
 export default function Board() {
   const [squares, setBoard] = useState(Array(64).fill(null));
-
-
+  
   return (
     <div>
       <div className = "status"></div>
       <div className="board-row">
         <SquareWhite value = {squares[0]} />
-        <SquareBlack value = {squares[1]} />
+        <SquareBlack image = {red}/>
         <SquareWhite value = {squares[2]} />
-        <SquareBlack value = {squares[3]} />
+        <SquareBlack image = {red} />
         <SquareWhite value = {squares[4]} />
-        <SquareBlack value = {squares[5]} />
+        <SquareBlack image = {red} />
         <SquareWhite value = {squares[6]} />
-        <SquareBlack value = {squares[7]} />
+        <SquareBlack image = {red} />
       </div>
       <div className="board-row">
-        <SquareBlack value = {squares[8]} />
+        <SquareBlack image = {red} />
         <SquareWhite value = {squares[9]} />
-        <SquareBlack value = {squares[10]} />
+        <SquareBlack image = {red} />
         <SquareWhite value = {squares[11]} />
-        <SquareBlack value = {squares[12]} />
+        <SquareBlack image = {red} />
         <SquareWhite value = {squares[13]} />
-        <SquareBlack value = {squares[14]} />
+        <SquareBlack image = {red} />
         <SquareWhite value = {squares[15]} />
       </div>
       <div className="board-row">
         <SquareWhite value = {squares[16]} />
-        <SquareBlack value = {squares[17]} />
+        <SquareBlack image = {red} />
         <SquareWhite value = {squares[18]} />
-        <SquareBlack value = {squares[19]} />
+        <SquareBlack image = {red} />
         <SquareWhite value = {squares[20]} />
-        <SquareBlack value = {squares[21]} />
+        <SquareBlack image = {red} />
         <SquareWhite value = {squares[22]} />
-        <SquareBlack value = {squares[23]} />
+        <SquareBlack image = {red} />
       </div>
       <div className="board-row">
         <SquareBlack value = {squares[24]} />
@@ -64,44 +62,44 @@ export default function Board() {
         <SquareBlack value = {squares[39]} />
       </div>
       <div className="board-row">
-        <SquareBlack value = {squares[40]} />
+        <SquareBlack image = {white} />
         <SquareWhite value = {squares[41]} />
-        <SquareBlack value = {squares[42]} />
+        <SquareBlack image = {white} />
         <SquareWhite value = {squares[43]} />
-        <SquareBlack value = {squares[44]} />
+        <SquareBlack image = {white} />
         <SquareWhite value = {squares[45]} />
-        <SquareBlack value = {squares[46]} />
+        <SquareBlack image = {white} />
         <SquareWhite value = {squares[47]} />
       </div>
       <div className="board-row">
         <SquareWhite value = {squares[48]} />
-        <SquareBlack value = {squares[49]} />
+        <SquareBlack image = {white} />
         <SquareWhite value = {squares[50]} />
-        <SquareBlack value = {squares[51]} />
+        <SquareBlack image = {white} />
         <SquareWhite value = {squares[52]} />
-        <SquareBlack value = {squares[53]} />
+        <SquareBlack image = {white} />
         <SquareWhite value = {squares[54]} />
-        <SquareBlack value = {squares[55]} />
+        <SquareBlack image = {white} />
       </div>
       <div className="board-row">
-        <SquareBlack value = {squares[56]} />
+        <SquareBlack image = {white} />
         <SquareWhite value = {squares[57]} />
-        <SquareBlack value = {squares[58]} />
+        <SquareBlack image = {white} />
         <SquareWhite value = {squares[59]} />
-        <SquareBlack value = {squares[60]} />
+        <SquareBlack image = {white} />
         <SquareWhite value = {squares[61]} />
-        <SquareBlack value = {squares[62]} />
+        <SquareBlack image = {white} />
         <SquareWhite value = {squares[63]} />
       </div>
     </div>
     );
 }
 
-function SquareBlack({value}) {
+function SquareBlack({image}) {
   return (
   <button 
     className="square1">
-      <img className="red-piece" src = {red}></img>
+      <img src={image}></img>
   </button>
   );
 }
