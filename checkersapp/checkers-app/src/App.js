@@ -11,93 +11,109 @@ export default function Board() {
     <div>
       <div className = "status"></div>
       <div className="board-row">
-        <Square value = {squares[0]} />
-        <Square value = {squares[1]} />
-        <Square value = {squares[2]} />
-        <Square value = {squares[3]} />
-        <Square value = {squares[4]} />
-        <Square value = {squares[5]} />
-        <Square value = {squares[6]} />
-        <Square value = {squares[7]} />
+        <SquareWhite value = {squares[0]} />
+        <SquareBlack value = {squares[1]} />
+        <SquareWhite value = {squares[2]} />
+        <SquareBlack value = {squares[3]} />
+        <SquareWhite value = {squares[4]} />
+        <SquareBlack value = {squares[5]} />
+        <SquareWhite value = {squares[6]} />
+        <SquareBlack value = {squares[7]} />
       </div>
       <div className="board-row">
-        <Square value = {squares[8]} />
-        <Square value = {squares[9]} />
-        <Square value = {squares[10]} />
-        <Square value = {squares[11]} />
-        <Square value = {squares[12]} />
-        <Square value = {squares[13]} />
-        <Square value = {squares[14]} />
-        <Square value = {squares[15]} />
+        <SquareBlack value = {squares[8]} />
+        <SquareWhite value = {squares[9]} />
+        <SquareBlack value = {squares[10]} />
+        <SquareWhite value = {squares[11]} />
+        <SquareBlack value = {squares[12]} />
+        <SquareWhite value = {squares[13]} />
+        <SquareBlack value = {squares[14]} />
+        <SquareWhite value = {squares[15]} />
       </div>
       <div className="board-row">
-        <Square value = {squares[16]} />
-        <Square value = {squares[17]} />
-        <Square value = {squares[18]} />
-        <Square value = {squares[19]} />
-        <Square value = {squares[20]} />
-        <Square value = {squares[21]} />
-        <Square value = {squares[22]} />
-        <Square value = {squares[23]} />
+        <SquareWhite value = {squares[16]} />
+        <SquareBlack value = {squares[17]} />
+        <SquareWhite value = {squares[18]} />
+        <SquareBlack value = {squares[19]} />
+        <SquareWhite value = {squares[20]} />
+        <SquareBlack value = {squares[21]} />
+        <SquareWhite value = {squares[22]} />
+        <SquareBlack value = {squares[23]} />
       </div>
       <div className="board-row">
-        <Square value = {squares[24]} />
-        <Square value = {squares[25]} />
-        <Square value = {squares[26]} />
-        <Square value = {squares[27]} />
-        <Square value = {squares[28]} />
-        <Square value = {squares[29]} />
-        <Square value = {squares[30]} />
-        <Square value = {squares[31]} />
+        <SquareBlack value = {squares[24]} />
+        <SquareWhite value = {squares[25]} />
+        <SquareBlack value = {squares[26]} />
+        <SquareWhite value = {squares[27]} />
+        <SquareBlack value = {squares[28]} />
+        <SquareWhite value = {squares[29]} />
+        <SquareBlack value = {squares[30]} />
+        <SquareWhite value = {squares[31]} />
       </div>
       <div className="board-row">
-        <Square value = {squares[32]} />
-        <Square value = {squares[33]} />
-        <Square value = {squares[34]} />
-        <Square value = {squares[35]} />
-        <Square value = {squares[36]} />
-        <Square value = {squares[37]} />
-        <Square value = {squares[38]} />
-        <Square value = {squares[39]} />
+        <SquareWhite value = {squares[32]} />
+        <SquareBlack value = {squares[33]} />
+        <SquareWhite value = {squares[34]} />
+        <SquareBlack value = {squares[35]} />
+        <SquareWhite value = {squares[36]} />
+        <SquareBlack value = {squares[37]} />
+        <SquareWhite value = {squares[38]} />
+        <SquareBlack value = {squares[39]} />
       </div>
       <div className="board-row">
-        <Square value = {squares[40]} />
-        <Square value = {squares[41]} />
-        <Square value = {squares[42]} />
-        <Square value = {squares[43]} />
-        <Square value = {squares[44]} />
-        <Square value = {squares[45]} />
-        <Square value = {squares[46]} />
-        <Square value = {squares[47]} />
+        <SquareBlack value = {squares[40]} />
+        <SquareWhite value = {squares[41]} />
+        <SquareBlack value = {squares[42]} />
+        <SquareWhite value = {squares[43]} />
+        <SquareBlack value = {squares[44]} />
+        <SquareWhite value = {squares[45]} />
+        <SquareBlack value = {squares[46]} />
+        <SquareWhite value = {squares[47]} />
       </div>
       <div className="board-row">
-        <Square value = {squares[48]} />
-        <Square value = {squares[49]} />
-        <Square value = {squares[50]} />
-        <Square value = {squares[51]} />
-        <Square value = {squares[52]} />
-        <Square value = {squares[53]} />
-        <Square value = {squares[54]} />
-        <Square value = {squares[55]} />
+        <SquareWhite value = {squares[48]} />
+        <SquareBlack value = {squares[49]} />
+        <SquareWhite value = {squares[50]} />
+        <SquareBlack value = {squares[51]} />
+        <SquareWhite value = {squares[52]} />
+        <SquareBlack value = {squares[53]} />
+        <SquareWhite value = {squares[54]} />
+        <SquareBlack value = {squares[55]} />
       </div>
       <div className="board-row">
-        <Square value = {squares[56]} />
-        <Square value = {squares[57]} />
-        <Square value = {squares[58]} />
-        <Square value = {squares[59]} />
-        <Square value = {squares[60]} />
-        <Square value = {squares[61]} />
-        <Square value = {squares[62]} />
-        <Square value = {squares[63]} />
+        <SquareBlack value = {squares[56]} />
+        <SquareWhite value = {squares[57]} />
+        <SquareBlack value = {squares[58]} />
+        <SquareWhite value = {squares[59]} />
+        <SquareBlack value = {squares[60]} />
+        <SquareWhite value = {squares[61]} />
+        <SquareBlack value = {squares[62]} />
+        <SquareWhite value = {squares[63]} />
       </div>
     </div>
     );
 }
-
 function Square({value}) {
   return (
   <button 
     className="square">
+    {value}
+  </button>
+  );
+}
+function SquareBlack({value}) {
+  return (
+  <button 
+    className="square1">
+    {value}
+  </button>
+  );
+}
+
+function SquareWhite({value}) {
+  return (
+  <button 
+    className="square2"> 
     {value}
   </button>
   );
