@@ -9,6 +9,7 @@ import red from './red-check.png';
 export default function Board() {
   const [squares, setBoard] = useState(Array(64).fill(null));
 
+
   return (
     <div>
       <div className = "status"></div>
