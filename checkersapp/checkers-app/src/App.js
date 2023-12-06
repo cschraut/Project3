@@ -7,7 +7,6 @@ import {useState} from 'react';
 export default function Board() {
   const [squares, setSquares] = useState(Array(64).fill(null));
 
-
   return (
     <div>
       <div className = "status"></div>
