@@ -18,32 +18,45 @@ export default function Board() {
     white,null,white,null,white,null,white,null
   ]);
   const [count, setCount] = useState(0);
+  const [fromMove, setFromMove] = useState(-1);
+  const [toMove, setToMove] = useState(-1);
   
   function handleClick(i){
     const nextSquares = squares.slice()
-    if(count == 0){
+    if(count === 0){
       nextSquares[i] = blank;
       setBoard(nextSquares);
-      setCount(1)
+      setFromMove(i);
+      setCount(1);
     }
-    if(count == 1){
+    if(count === 1){
       nextSquares[i] = red
       setBoard(nextSquares);
-      setCount(2)
+      setToMove(i);
+      setCount(2);
+      if((fromMove === 17) && (i === 35)){
+        nextSquares[26] = blank;
+        setBoard(nextSquares);
+      }
     }
-    if(count == 2){
+    if(count === 2){
       nextSquares[i] = blank;
       setBoard(nextSquares);
-      setCount(3)
+      setFromMove(i)
+      setCount(3);
+      
     }
-    if(count == 3){
+    if(count === 3){
       nextSquares[i] = white;
       setBoard(nextSquares);
-      setCount(0)
+      setToMove(i)
+      setCount(0);
+      if((fromMove === 17) && (i === 35)){
+        nextSquares[26] = blank;
+        setBoard(nextSquares);
+      }  
     }
-    
-  }
-  
+}
   return (
     <div>
       <div className = "status"></div>
@@ -132,7 +145,6 @@ export default function Board() {
 }
 
 function SquareBlack({image, onSquareClick}) {
-  if(image )
   return (
   <button 
     className="square1">
