@@ -29,15 +29,159 @@ export default function Board() {
       setFromMove(i);
       setCount(1);
     }
+    
     if(count === 1){
       nextSquares[i] = red
       setBoard(nextSquares);
       setToMove(i);
       setCount(2);
-      if((fromMove === 17) && (i === 35)){
+      if((fromMove === 1) && (i === 19)){ //
+        nextSquares[10] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 3) && (i === 17)){ //
+        nextSquares[10] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 3) && (i === 21)){ //
+        nextSquares[12] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 5) && (i === 19)){ //
+        nextSquares[12] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 5) && (i === 23)){ //
+        nextSquares[14] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 7) && (i === 21)){ //
+        nextSquares[14] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 8) && (i === 26)){ //
+        nextSquares[17] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 10) && (i === 24)){ //
+        nextSquares[17] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 10) && (i === 28)){ //
+        nextSquares[19] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 12) && (i === 26)){ //
+        nextSquares[19] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 12) && (i === 30)){ //
+        nextSquares[21] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 14) && (i === 28)){ //
+        nextSquares[21] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 17) && (i === 35)){ //
         nextSquares[26] = blank;
         setBoard(nextSquares);
       }
+      if((fromMove === 19) && (i === 33)){ //
+        nextSquares[26] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 19) && (i === 37)){ //
+        nextSquares[28] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 21) && (i === 35)){ //
+        nextSquares[26] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 21) && (i === 39)){ //
+        nextSquares[30] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 23) && (i === 37)){ //
+        nextSquares[30] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 24) && (i === 42)){ //
+        nextSquares[33] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 26) && (i === 40)){ //
+        nextSquares[33] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 26) && (i === 44)){ //
+        nextSquares[35] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 28) && (i === 42)){ //
+        nextSquares[35] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 28) && (i === 46)){ //
+        nextSquares[37] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 30) && (i === 44)){ //
+        nextSquares[37] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 33) && (i === 51)){ //
+        nextSquares[42] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 35) && (i === 49)){ //
+        nextSquares[42] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 35) && (i === 53)){ //
+        nextSquares[44] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 37) && (i === 51)){ //
+        nextSquares[44] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 37) && (i === 55)){ //
+        nextSquares[46] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 39) && (i === 53)){ //
+        nextSquares[46] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 40) && (i === 58)){ //
+        nextSquares[49] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 42) && (i === 56)){ //
+        nextSquares[49] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 42) && (i === 60)){ //
+        nextSquares[51] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 44) && (i === 58)){ //
+        nextSquares[51] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 44) && (i === 62)){ //
+        nextSquares[53] = blank;
+        setBoard(nextSquares);
+      }
+      if((fromMove === 46) && (i === 60)){ //
+        nextSquares[53] = blank;
+        setBoard(nextSquares);
+      }
+      
+     
+      
     }
     if(count === 2){
       nextSquares[i] = blank;
@@ -51,7 +195,7 @@ export default function Board() {
       setBoard(nextSquares);
       setToMove(i)
       setCount(0);
-      if((fromMove === 17) && (i === 35)){
+      if((fromMove === 17) && (i === 35)){ //
         nextSquares[26] = blank;
         setBoard(nextSquares);
       }  
