@@ -21,16 +21,16 @@ export default function Board() {
   const [fromMove, setFromMove] = useState(-1);
   const [redPieces, setRedPieces] = useState(12);
   const [whitePieces, setWhitePieces] = useState(12);
-  const [winner, setWinner] = useState('Hello World');
+  const [winner, setWinner] = useState('');
   
   function handleClick(i){
     if (redPieces === 0){
-      setWinner('white');
+      setWinner('White Wins!');
       console.log(winner);
       setCount(-1);
     }
     if (whitePieces === 0){
-      setWinner('red')
+      setWinner('Red Wins!')
       console.log(winner);
       setCount(-1);
     }
@@ -864,7 +864,7 @@ export default function Board() {
         <SquareWhite value = {squares[63]} />
       </div>
       <div>
-        <p className="winner">{winner}</p>
+        <h1 className="winner">{winner}</h1>
       </div>
     </div>
     );
