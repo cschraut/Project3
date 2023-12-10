@@ -80,3 +80,10 @@
     margin-top: 0px;
   }
   
+  .winner{
+    text-align: right;
+    margin-top: -500px;
+    padding-right: 200px;
+    font-size: 50px;
+    font-weight: bold;
+  }
