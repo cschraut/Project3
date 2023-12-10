@@ -19,8 +19,19 @@ export default function Board() {
   ]);
   const [count, setCount] = useState(0);
   const [fromMove, setFromMove] = useState(-1);
+  const [redPieces, setRedPieces] = useState(12);
+  const [whitePieces, setWhitePieces] = useState(12);
+  const [winner, setWinner] = useState('');
   
   function handleClick(i){
+    if (redPieces == 0){
+      setWinner('white');
+      console.log(winner);
+    }
+    if (whitePieces == 0){
+      setWinner('red');
+      console.log(winner);
+    }
     const nextSquares = squares.slice()
     if(count === 0){
       nextSquares[i] = blank;
@@ -30,7 +41,7 @@ export default function Board() {
     }
     
     if(count === 1){
-      nextSquares[i] = red
+      nextSquares[i] = red;
       setBoard(nextSquares);
       setCount(2);
       if((fromMove === 1) && (i === 19)){ //
